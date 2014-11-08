@@ -7,44 +7,43 @@ window.onload = function(){
 	
 	
 
-    var nowDate = new Date();
-    var endDate = new Date(date);
-     
-var difference = ((nowDate.getTime()-endDate.getTime())/(1000*60*60*24));
-                                                                       console.log((endDate.getTime()-nowDate.getTime())/(1000*60*60*24) );
-                                                               console.log(nowDate);
-                                                                       console.log(endDate);
-                                                                          console.log(difference);
-                                                                 
+    var nowDate = new Date();     /*dagen nu */ /*variablar */
+    var endDate = new Date(date);   /* inmatnings dagen */
+    var day = endDate.getDate()-nowDate.getDate();             /* variabel för dagen */
+    var month = endDate.getMonth()- nowDate.getMonth();        /*variabel för månaden */
+    var difference = ((nowDate.getTime()-endDate.getTime())/(1000*60*60*24));   /* differensen mellan dagarna som är mer än 1 dag */
+    
+                                                                                 console.log((endDate.getTime()-nowDate.getTime())/(1000*60*60*24) );  /*test */
+                                                                              console.log(nowDate);
+                                                                              console.log(endDate);
+                                                                                 console.log(difference);
+                                                                                   console.log(Math.floor(date));   /* nan */ 
+                                                                                      console.log((endDate.getTime()-nowDate.getTime())/(1000*60*60*24)-1);
+            
                                                              
-                                                                              /*om subrtraktion blir mindre än 0 så returnerar man värden 0 */
+   if (date === "")
+		{ 
+			throw new Error("FEL! ange ditt födelsedatum igen");                               
+		}
+                                                                                  /*om subrtraktion blir mindre än 0 så returnerar man värden 0 */
                                        
-	                                                                 /* varför tog jag return 0; */
-
-
-var day = endDate.getDate()-nowDate.getDate();
-var month = endDate.getMonth()- nowDate.getMonth();
+	                                                                       /* varför tog jag return 0; */
 if(day === 0 && month === 0)
-{                                                                   /* fick fram födelsedag */
+{                                                                                     /* fick fram födelsedag */
 	return 0;
 }
 
-if (day === -1 && month ===0)                      /* här gör jag att det ska returnaa imorgon eftersom dagen är inte lika med -1 */
-{                                                     /* allstå under 1 dag  */
-	return 1;                                        /* returnera 1 eftersom vid case 2 = "du fyller om 1 dag " */
-}
 
-             return Math.floor(difference);        /* returnera dagarna mellan födelsedagen o den dagen nu */
-                                                   /* math.floor för avrundning */
-             console.log(Math.floor(date)) 
+if (day === -1 && month ===0)                                                     /* här gör jag att det ska returnaa imorgon eftersom dagen är inte lika med -1 */
+{                                                                              /* allstå under 1 dag  */
+	return 1;                                                                     /* returnera 1 eftersom vid case 2 = "du fyller om 1 dag " */
+}                                                                             
+                                                                                            /* kastar undantag */
+             return Math.floor(difference);                                          /* returnera dagarna mellan födelsedagen o den dagen nu */
+                                                                     /* math.floor för avrundning */
+             
 
-        console.log((endDate.getTime()-nowDate.getTime())/(1000*60*60*24)-1 );
 
-
-if (date === "")
-		{ 
-			throw new Error("FEL! ange ditt födelsedatum igen");
-		}
 
 
 

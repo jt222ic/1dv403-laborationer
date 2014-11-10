@@ -10,6 +10,7 @@ var NumberArr = [];
 var NameArr = [];
 var p;
 var names;
+
                                       /*persArr innehåller många objects */
 
 for (p = 0; persArr[p]; p+=1)
@@ -24,36 +25,40 @@ for ( p= 0; persArr[p]; p+=1 )
 }
 
 
-NameArr.sort(function (a,b) { return a.localeCompare(b, 'sv'); });  /* sortering av givna namn referens lucas*/
-console.log(NameArr[0])
+names = NameArr.sort(function (a,b) { return a.localeCompare(b, 'sv'); });  /* sortering av givna namn referens lucas*/
 
 
 
-names = NameArr;
+names = NameArr.toString();   /* få bort brackets och ""* för att få fram texten*/
 
+
+var averageAge;
 var MinAge;   /* hur? */
 var MaxAge;    /* hur? */
-var AverageAge; /* hur?*/
+           /* hur?*/
 
 
-console.log(NumberArr[2]);             //* har fått alla åldar för alla lärare
+/*console.log(NumberArr[2]); */             //* har fått alla åldar för alla lärare
 
-  MinAge = NumberArr[p];
-  
-  
-
-console.log(MinAge);
+   averageAge = NumberArr.reduce(function(a, b) { return a + b });
+ averageAge = averageAge/ NumberArr.length;
+  MinAge = Math.min.apply(Math, NumberArr);  /* min value form för att ber'kna minsta värdet i array */
+  MaxAge = Math.max.apply(Math, NumberArr);  /* max value form för att berakna största värdet i array*/
+  /* provar min value*/
+ 
+ 
+console.log(MinAge);   /*provning */
+console.log(MaxAge);
 console.log(names);
 
 
 
+/*                                                    /* john Häggerud  object 1*/	 
+names = names.split(",").join(", ");   /* det var mellanrum i namn sorteringen enligt index */
 
-                                                    /* john Häggerud  object 1*/	 
-
-
-                                                    
-result = (MinAge, names); 
-
+                                                     
+var result = {averageAge: Math.round(averageAge) ,minAge: MinAge, maxAge: MaxAge, names : names}
+console.log(result);
 return result;
 
                                       

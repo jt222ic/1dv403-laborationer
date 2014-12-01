@@ -45,7 +45,7 @@ window.onload = function(){
 
 
 
-	if (str === "fuck")
+	if (str === "fuck" || str === "FUCK")
 	{
 	alert("inga svordomar!" )                               /* provar alert */
 	}

@@ -18,13 +18,13 @@ Math.floor( Math.random() * 100)+1;
 
 
 
-if (number <= min || number >= max)
+if (number <= min || number > max)
 {
 		return[false, "talet är untanför intervallet 0-100"]     //* vet inte varför man ska ha den längst upp för att koden ska fungera *//
 	}
 
 
-if( number == secret)
+if(+number === secret) 
 {
  return [ true, " Grattis du vann! det hemliga talet var "+ secret +" du behövde "+ count +" gissningar för att hitta det."]
 }
@@ -41,7 +41,7 @@ else if(number> secret)
 return 	[false, "Det hemliga talet är lägre!"]
 }
 
-else if (isNaN(number))
+else if (isNaN(number))   /* bool värde*/
 {
 	return[false , " icke tal!"]        /// is NAn kan inte läsa tal 
 }

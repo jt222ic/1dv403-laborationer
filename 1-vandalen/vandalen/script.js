@@ -41,7 +41,7 @@ var MaxAge;    /* hur? */
 /*console.log(NumberArr[2]); */             //* har fått alla åldar för alla lärare
 
    averageAge = NumberArr.reduce(function(a, b) { return a + b });
- averageAge = averageAge/ NumberArr.length;
+ averageAge = averageAge/ NumberArr.length;   /* refenrs  */
   MinAge = Math.min.apply(Math, NumberArr);  /* min value form för att ber'kna minsta värdet i array */
   MaxAge = Math.max.apply(Math, NumberArr);  /* max value form för att berakna största värdet i array*/
   /* provar min value*/

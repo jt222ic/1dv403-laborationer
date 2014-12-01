@@ -7,10 +7,10 @@ window.onload = function(){
 	
 	
 
-    var nowDate = new Date();     /*dagen nu */ /*variablar */
-    var endDate = new Date(date);   /* inmatnings dagen */
-    var day = endDate.getDate()-nowDate.getDate();             /* variabel för dagen */
-    var month = endDate.getMonth()- nowDate.getMonth();        /*variabel för månaden */
+    var nowDate = new Date();                                /*dagen nu */ /*variablar */
+    var endDate = new Date(date);         /* inmatnings dagen */
+    var day = endDate.getDate()-nowDate.getDate();                  /* variabel för dagen */
+    var month = endDate.getMonth()- nowDate.getMonth();           /*variabel för månaden */
     var difference = ((nowDate.getTime()-endDate.getTime())/(1000*60*60*24));   /* differensen mellan dagarna som är mer än 1 dag */
     
                                                                                  console.log((endDate.getTime()-nowDate.getTime())/(1000*60*60*24) );  /*test */

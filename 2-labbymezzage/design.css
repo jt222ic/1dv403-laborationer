@@ -1,0 +1,84 @@
+
+
+
+body {
+    background-image : url('picture/golden.jpg');
+}
+
+
+#header{
+    font-family: Helvetica, Arial , sans-serif;
+    text-align:center;
+    text-shadow: 5px 2px 3px red;
+}
+
+textarea{
+    
+    
+   margin-left:35%;
+   margin-top:10%;
+ width:644px;
+    height:200px;
+    
+    font-size:24px;
+    font-family:arial;
+}
+
+
+
+
+.MessageTime{
+    margin-right:3px;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    font-size:12px;
+    color:#2A406F;
+}   
+   
+
+
+
+.DeletePicture
+{
+    width:24px;
+    height:24px;
+    position:absolute;
+    top:5px;
+    right:0;
+}
+
+.ClockPicture
+{
+    width:24px;
+    height:24px;
+    position:absolute;
+    top:5px;
+    right:30px;
+}
+    
+#text
+{ 
+    border:5px solid black;
+    padding:5px;
+    overflow-y:scroll; 
+    height:360px; 
+    max-height:360px;
+    max-width:670px;
+    margin-left:450px;
+}
+
+.text
+{
+    padding-right:70px;
+    padding-left:5px;
+    font-family:verdana;
+    font-size:26px;
+    border:1px solid black;
+    background-color:#4F69A2;
+    width:auto;
+    height:auto;
+    min-height:50px;
+    position:relative;
+    word-break:break-all;
+}

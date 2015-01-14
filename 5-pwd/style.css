@@ -1,0 +1,132 @@
+
+
+body{
+background-image: url("pics/lord.jpg");
+}
+
+
+#picwind{
+    height:500px;
+    width:400px;
+    border:2px solid; 
+   box-shadow: 2px 2px 5px;
+   color:lightgrey;
+    display:block;
+    
+}
+
+
+
+#topbar{
+    height: 40px;
+    max-width:100%;
+    
+    color:blue;
+    background-image:url("pics/wodd.jpg");
+   
+}
+
+#topbar p{
+    
+    margin-top:0px;
+    width:50px;
+    color:gold;
+    
+}
+
+
+
+#loading
+
+{
+    
+}
+
+#footer{
+    
+                                                     
+    background-image:url("pics/wodd.jpg");
+    max-width:100%;
+    height:50px;
+    bottom:-410px;
+    position:relative;
+    
+
+}
+
+#removebutton{
+   width: 40px;
+right: 40px;
+margin-left: 360px;
+margin-top: 0;
+position: absolute;
+left: 10px;
+top: 10px;
+}
+
+#removebutton:hover
+{
+    
+    background-color:lightgreen;
+}
+
+#windArea{
+    background-color:white;
+       overflow:auto;
+        height:inherit;
+        height:85%;
+        margin-top:-49px;
+        
+}
+
+#bildAtaggar{
+     -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    
+    display:inline-block;
+    width:80px;
+    height:80px;
+    background:black;
+    padding:1px;
+    margin:3px;
+    text-align:center;
+    
+}
+#bildAtaggar img {
+     
+    margin-top:5%;
+}
+
+#footer2
+{
+     
+    width:100%;
+    height:100px;
+    background-image:url("pics/onering.jpg");
+    position:absolute;
+    bottom: 0px;
+    opacity: 0.4;
+}
+
+
+#picbutton{
+  
+    
+    color:yellow;
+}
+
+
+#gallery {
+     
+    width:100px;
+    height:100px;
+}
+
+#minGallery{
+    
+    height:20px;
+    margin-top:0px;
+    
+}
+

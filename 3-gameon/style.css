@@ -1,0 +1,49 @@
+
+
+body {
+    background-image : url('memory/picture/vagabond.jpg');
+    background-repeat:no-repeat;
+}
+
+
+
+#Board{
+    width:530px;
+    height:550px;
+    position:relative;
+    left:450px;
+    top:200px;
+    background-color:white;
+    border:5px solid black;
+    padding:15px;
+    margin:0;
+    
+}
+
+
+
+
+header{ 
+    color:white;
+    text-align:right;
+    position:relative;
+    right:120px;
+    top:200px;
+    margin-top:0; 
+    font-size:64px; 
+    font-family:"Architects Daughter", cursive;
+    
+}
+
+
+#ShowBox{
+    font-size:24px;
+    text-align:center;
+    position:relative;
+    left:700px;
+    top:250px;
+    width:346px;
+    height:50px;
+    background-color:white;
+    border:5px solid black;
+}

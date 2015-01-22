@@ -15,3 +15,37 @@ picbutton.addEventListener("keydown", function(e) {
                     
                     var picButton = document.getElementById("aTagOpenP");
         picButton.addEventListener("click", htmldesktop.createPicwindow);    ///**  pic button
+        
+        
+        
+        
+        
+        
+        var desktop= {
+            
+            enter:true
+            
+            
+            
+            var clickbutton = document.getElementById("clickbutton");         /// träääning
+            clickbutton.addEventListener("click", function(){
+                  
+                if(desktop.enter=== true)
+                {
+                    desktop.enter=false
+                    desktop.createPicwindow();
+                }
+                
+                
+                 )
+                
+                
+            })
+        
+        
+        
+            
+            
+            
+            
+        }

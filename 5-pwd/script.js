@@ -117,7 +117,7 @@ var desktop = {
         
         var container=document.getElementById("container");
         container.id="container";
-        for (var i = 0; i < desktop.bildarray.length; i++) {     //** loopar igenom bild area   referens: lw22gz jt222ii;
+        for (var i = 0; i < desktop.bildarray.length; i++) {     //** loopar igenom bild area   referens: lw22gz jt222ii och mig själv;
             var imgAtag = document.createElement("a");
             imgAtag.href = "#";
             imgAtag.id = "bildAtaggar";
@@ -145,7 +145,7 @@ var desktop = {
 },
 
 removeWindow:function(){                          //7** functionen för att ta bort windows applikationer  **//
-        desktop.hej = true;                       /// jonas
+        desktop.hej = true;                       
         this.parentNode.parentNode.remove();
 },
    
